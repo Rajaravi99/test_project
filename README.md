@@ -1,1 +1,1 @@
-Just trying something new
+Just trying some
