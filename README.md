@@ -1,2 +1,1 @@
-Just trying something for master
-I am editing for Git and Git hub course.
+I am editing the README file. Adding some more details about the project description.
