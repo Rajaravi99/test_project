@@ -1,1 +1,1 @@
-Just trying something for roject
+Just trying something for project
