@@ -1,40 +1,30 @@
-// function employee(id,name){
-//     this.id=id;
-//     this.name=name;
+function book(name,writtenBy,year){
+    this.name=name;
+    this.author=writtenBy;
+    this.year=year;
+}
+// prototype 1
+book.prototype.getSummary=function(){
+    return `${this.name} was written by ${this.author} in ${this.year}`;
+}
+// prototype 2
+book.prototype.changeYear=function(newYear){
+    this.year=newYear;
+}
+let book1=new book("bookOne","Ravi","2010");
+let book2=new book("bookTwo","Ravi Nandan Ray","2011");
+console.log(book1);
+console.log(book2.getSummary());
+book2.changeYear("2012");
+console.log(book2.getSummary());
+//console.log(navigator.appVersion);
+// const book1={
+//     title: "Book1",
+//     writer: "Ravi",
+//     year: "2010",
+//     getSummary:function(){
+//         return `${this.title} was written by ${this.writer} in ${this.year}.`;
+//     } 
 // }
-// emp1=new employee(1,"Ravi");
-// emp2=new employee(2,"Nandan");
-// emp3=new employee(3,"Ray");
-// function fun(){
-//     document.write("write any thing");
-//     for(i=0;i<3;i++){
-//         if(i==0){
-//             document.write(emp1.id+" "+emp1.name);
-//         }
-//         else if(i==1){
-//             document.write(emp2.id+" "+emp2.name);
-//         }
-//         else{
-//             document.write(emp3.id+" "+emp3.name);
-//         }
-//     }
-// }
-function emp(id,name,salary){  
-    this.id=id;  
-    this.name=name;  
-    this.salary=salary;  
-}  
-e1=new emp(103,"Vimal",30000);
-e2=new emp(102,"Ravi",56000);
-e3=new emp(101,"Nandan",100000);
-for(i=0;i<3;i++){
-    if(i==0){
-        document.write(e1.id+" "+e1.name+" "+e1.salary);
-    }
-    else if(i==1){
-        document.write(e2.id+" "+e2.name+" "+e2.salary);
-    }
-    else{
-        document.write(e3.id+" "+e3.name+" "+e3.salary);
-    }
-}  
+
+// console.log(book1.getSummary());
